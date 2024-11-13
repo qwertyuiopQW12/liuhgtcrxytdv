@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion Pro</title>
+    <style>
+        /* خلفية شفافة مع الصورة */
+        body {
+            background-image: url('/pn.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Sumbli', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* تنسيق النص */
+        h1 {
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        /* إشعار أصغر */
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* إضافة شفافية للخلفية */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* شفافية بنسبة 60% */
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        /* إضافة التحميل */
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .loaders,
+        .loadersB {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader {
+            position: absolute;
+            width: 1.15em;
+            height: 13em;
+            border-radius: 50px;
+            background: #e0e0e0;
+            animation: rotate 3s infinite linear;
+        }
+
+        .loader:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.15em;
+            height: 5em;
+            background: #e0e0e0;
+            border-radius: 50px;
+            border: 1px solid #e2e2e2;
+            box-shadow:
+                inset 5px 5px 15px #d3d2d2ab,
+                inset -5px -5px 15px #e9e9e9ab;
+            mask-image: linear-gradient(
+                to bottom,
+                black calc(100% - 48px),
+                transparent 100%
+            );
+        }
+
+        .loaderA {
+            position: absolute;
+            width: 1.15em;
+            height: 13em;
+            border-radius: 50px;
+            background: transparent;
+            animation: move 3s infinite ease-in-out;
+        }
+
+        /* مربع أخضر يلف */
+        .square {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            animation: rotateSquare 3s infinite linear;
+            margin: 20px;
+        }
+
+        /* دائرة صفراء */
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            animation: rotateCircle 3s infinite linear;
+            margin: 20px;
+        }
+
+        /* تدوير التحميل */
+        @keyframes move {
+            0% {
+                transform: translateY(0em);
+            }
+            50% {
+                transform: translateY(12em);
+            }
+            100% {
+                transform: translateY(0em);
+            }
+        }
+
+        /* تدوير المربع الأخضر */
+        @keyframes rotateSquare {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* تدوير الدائرة الصفراء */
+        @keyframes rotateCircle {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* التأثير الذي يجعل الكرة تتنقل */
+        .ball1 {
+            animation-delay: 0.2s;
+        }
+
+        .ball2 {
+            animation-delay: 0.4s;
+        }
+
+        .ball3 {
+            animation-delay: 0.6s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- الحاوية التي تحتوي على النصوص -->
+    <div class="container">
+        <h1>شريكة فيوجن برو</h1>
+        <img src="/2025_١٧٣٦٤٨.png" alt="Fusion Pro Image" style="max-width: 100%; height: auto; margin-top: 20px;">
+        <p>لم يتم رفع أي محتوى</p>
+    </div>
+
+    <!-- تحميل الأنيميشن -->
+    <div class="main">
+        <div class="loaders">
+            <div class="loader"></div>
+            <div class="loaderA"></div>
+        </div>
+
+        <!-- الدائرة الصفراء والمربع الأخضر المتحرك -->
+        <div class="circle"></div>
+        <div class="square"></div>
+    </div>
+
+</body>
+</html>>>
+</body>
+
+</html>
